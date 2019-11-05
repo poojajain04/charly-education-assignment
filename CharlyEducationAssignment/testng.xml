@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="url" value="https://www.charly.education" />
+	<parameter name="userName" value="6317@berlin-htw.de" />
+	<parameter name="password" value="Pluspeter" />
+	<test thread-count="5" name="LoginPostiveTestCase">
+		<parameter name="successMsg" value="Hey Carina" />
+		<classes>
+			<class
+				name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
+				<methods>
+					<include name="Login_RightAuthenticationDetails_ShouldLoginSuccessfully" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="LoginNegativeTestCase">
+		<parameter name="password" value="Pluspeter123" />
+		<parameter name="errorMessage"
+			value="Entweder sind deine E-Mail oder Passwort inkorrekt. Oder du hast dein Konto noch nicht aktiviert. Um es zu aktivieren, klicke auf den Link in unserer Registrierungs-E-Mail" />
+		<classes>
+			<class
+				name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
+				<methods>
+					<include name="Login_WrongAuthenticationDetails_ShouldFailLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

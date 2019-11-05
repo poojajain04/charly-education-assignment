@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="password" value="Pluspeter123"/>
+  <parameter name="errorMessage" value="Entweder sind deine E-Mail oder Passwort inkorrekt. Oder du hast dein Konto noch nicht aktiviert. Um es zu aktivieren, klicke auf den Link in unserer Registrierungs-E-Mail"/>
+  <parameter name="successMsg" value="Hey Carina"/>
+  <parameter name="userName" value="6317@berlin-htw.de"/>
+  <parameter name="url" value="https://www.charly.education"/>
+  <test name="NegativeTestCase(failed)">
+    <parameter name="password" value="Pluspeter123"/>
+    <parameter name="errorMessage" value="Entweder sind deine E-Mail oder Passwort inkorrekt. Oder du hast dein Konto noch nicht aktiviert. Um es zu aktivieren, klicke auf den Link in unserer Registrierungs-E-Mail"/>
+    <parameter name="userName" value="6317@berlin-htw.de"/>
+    <classes>
+      <class name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
+        <methods>
+          <include name="Login_WrongAuthenticationDetails_ShouldFailLogin" invocation-numbers="0"/>
+          <include name="BasePageNavigation"/>
+          <include name="BasePageNavigation"/>
+        </methods>
+      </class> <!-- CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
+    </classes>
+  </test> <!-- NegativeTestCase(failed) -->
+</suite> <!-- Failed suite [Suite] -->
