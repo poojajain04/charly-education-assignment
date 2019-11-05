@@ -6,18 +6,17 @@
   <parameter name="successMsg" value="Hey Carina"/>
   <parameter name="userName" value="6317@berlin-htw.de"/>
   <parameter name="url" value="https://www.charly.education"/>
-  <test name="NegativeTestCase(failed)">
-    <parameter name="password" value="Pluspeter123"/>
-    <parameter name="errorMessage" value="Entweder sind deine E-Mail oder Passwort inkorrekt. Oder du hast dein Konto noch nicht aktiviert. Um es zu aktivieren, klicke auf den Link in unserer Registrierungs-E-Mail"/>
-    <parameter name="userName" value="6317@berlin-htw.de"/>
+  <test name="LoginPostiveTestCase(failed)">
+    <parameter name="successMsg" value="Hey Carina"/>
     <classes>
       <class name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
         <methods>
-          <include name="Login_WrongAuthenticationDetails_ShouldFailLogin" invocation-numbers="0"/>
+          <include name="Closewindows"/>
+          <include name="Login_RightAuthenticationDetails_ShouldLoginSuccessfully"/>
           <include name="BasePageNavigation"/>
           <include name="BasePageNavigation"/>
         </methods>
       </class> <!-- CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
     </classes>
-  </test> <!-- NegativeTestCase(failed) -->
+  </test> <!-- LoginPostiveTestCase(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -158,7 +158,7 @@
   &lt;parameter name=&quot;password&quot; value=&quot;Pluspeter&quot;/&gt;
   &lt;parameter name=&quot;userName&quot; value=&quot;6317@berlin-htw.de&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://www.charly.education&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;PostiveTestCase&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginPostiveTestCase&quot;&gt;
     &lt;parameter name=&quot;successMsg&quot; value=&quot;Hey Carina&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;CharlyEducation.CharlyEducationAssignment.CharlyEducationTest&quot;&gt;
@@ -167,8 +167,8 @@
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- CharlyEducation.CharlyEducationAssignment.CharlyEducationTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- PostiveTestCase --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;NegativeTestCase&quot;&gt;
+  &lt;/test&gt; &lt;!-- LoginPostiveTestCase --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginNegativeTestCase&quot;&gt;
     &lt;parameter name=&quot;password&quot; value=&quot;Pluspeter123&quot;/&gt;
     &lt;parameter name=&quot;errorMessage&quot; value=&quot;Entweder sind deine E-Mail oder Passwort inkorrekt. Oder du hast dein Konto noch nicht aktiviert. Um es zu aktivieren, klicke auf den Link in unserer Registrierungs-E-Mail&quot;/&gt;
     &lt;classes&gt;
@@ -178,7 +178,7 @@
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- CharlyEducation.CharlyEducationAssignment.CharlyEducationTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- NegativeTestCase --&gt;
+  &lt;/test&gt; &lt;!-- LoginNegativeTestCase --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,10 +190,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">PostiveTestCase (1 class)</span>
+                <span class="test-name">LoginPostiveTestCase (1 class)</span>
               </li>
               <li>
-                <span class="test-name">NegativeTestCase (1 class)</span>
+                <span class="test-name">LoginNegativeTestCase (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,18 +221,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login_WrongAuthenticationDetails_ShouldFailLogin')
+data.setCell(0, 1, 'Login_RightAuthenticationDetails_ShouldLoginSuccessfully')
 data.setCell(0, 2, 'CharlyEducation.CharlyEducationAssignment.CharlyEducationTest')
-data.setCell(0, 3, 6999);
+data.setCell(0, 3, 7707);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login_RightAuthenticationDetails_ShouldLoginSuccessfully')
+data.setCell(1, 1, 'Login_WrongAuthenticationDetails_ShouldFailLogin')
 data.setCell(1, 2, 'CharlyEducation.CharlyEducationAssignment.CharlyEducationTest')
-data.setCell(1, 3, 6363);
+data.setCell(1, 3, 6740);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -274,23 +274,23 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Login_RightAuthenticationDetails_ShouldLoginSuccessfully(6317@berlin-htw.de, Pluspeter, Hey Carina)</span>
-                <span class="method-start">13082 ms</span>
+                <span class="method-start">10597 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Closewindows</span>
-                <span class="method-start">19447 ms</span>
+                <span class="method-start">18306 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">BasePageNavigation(https://www.charly.education)</span>
-                <span class="method-start">20193 ms</span>
+                <span class="method-start">19473 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Login_WrongAuthenticationDetails_ShouldFailLogin(6317@berlin-htw.de, Pluspeter123, Entweder sind deine E-Mail oder Passwort inkorrekt. Oder du hast d...)</span>
-                <span class="method-start">28701 ms</span>
+                <span class="method-start">28428 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Closewindows</span>
-                <span class="method-start">35701 ms</span>
+                <span class="method-start">35169 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -7,15 +7,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import utilities.PropertyReader;
+
 public class DriverBase {
 	public WebDriver driver;
 
 	public WebDriver InitializeDriver() throws IOException {
 
 		PropertyReader propertyReaderObj = new PropertyReader();
-		String propertyValue = propertyReaderObj.GetPropertyValue(
-				"C:\\Users\\lenovo\\eclipse-workspace\\CharlyEducationAssignment\\src\\main\\java\\resources\\data.properties",
-				"browser");
+		String propertyValue = propertyReaderObj.GetPropertyValue("./src/main/java/driver/data.properties", "browser");
 
 		System.out.println(propertyValue);// browser
 

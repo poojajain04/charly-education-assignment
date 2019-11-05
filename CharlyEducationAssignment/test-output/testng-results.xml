@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="37169" started-at="2019-11-05T21:00:48Z" finished-at="2019-11-05T21:01:25Z">
+  <suite name="Suite" duration-ms="35895" started-at="2019-11-05T21:57:24Z" finished-at="2019-11-05T21:58:00Z">
     <groups>
     </groups>
-    <test name="PostiveTestCase" duration-ms="20175" started-at="2019-11-05T21:00:48Z" finished-at="2019-11-05T21:01:08Z">
+    <test name="LoginPostiveTestCase" duration-ms="19460" started-at="2019-11-05T21:57:24Z" finished-at="2019-11-05T21:57:44Z">
       <class name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
-        <test-method status="PASS" signature="BasePageNavigation(java.lang.String)[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@19a81e8]" name="BasePageNavigation" is-config="true" duration-ms="13082" started-at="2019-11-05T22:00:48Z" finished-at="2019-11-05T22:01:01Z">
+        <test-method status="PASS" signature="BasePageNavigation(java.lang.String)[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@19a81e8]" name="BasePageNavigation" is-config="true" duration-ms="10597" started-at="2019-11-05T22:57:24Z" finished-at="2019-11-05T22:57:35Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method status="PASS" signature="Login_RightAuthenticationDetails_ShouldLoginSuccessfully(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@19a81e8]" name="Login_RightAuthenticationDetails_ShouldLoginSuccessfully" duration-ms="6363" started-at="2019-11-05T22:01:01Z" finished-at="2019-11-05T22:01:07Z">
+        <test-method status="PASS" signature="Login_RightAuthenticationDetails_ShouldLoginSuccessfully(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@19a81e8]" name="Login_RightAuthenticationDetails_ShouldLoginSuccessfully" duration-ms="7707" started-at="2019-11-05T22:57:35Z" finished-at="2019-11-05T22:57:43Z">
           <params>
             <param index="0">
               <value>
@@ -39,15 +39,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_RightAuthenticationDetails_ShouldLoginSuccessfully -->
-        <test-method status="PASS" signature="Closewindows()[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@19a81e8]" name="Closewindows" is-config="true" duration-ms="709" started-at="2019-11-05T22:01:07Z" finished-at="2019-11-05T22:01:08Z">
+        <test-method status="PASS" signature="Closewindows()[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@19a81e8]" name="Closewindows" is-config="true" duration-ms="1134" started-at="2019-11-05T22:57:43Z" finished-at="2019-11-05T22:57:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closewindows -->
       </class> <!-- CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
-    </test> <!-- PostiveTestCase -->
-    <test name="NegativeTestCase" duration-ms="16961" started-at="2019-11-05T21:01:08Z" finished-at="2019-11-05T21:01:25Z">
+    </test> <!-- LoginPostiveTestCase -->
+    <test name="LoginNegativeTestCase" duration-ms="16405" started-at="2019-11-05T21:57:44Z" finished-at="2019-11-05T21:58:00Z">
       <class name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
-        <test-method status="PASS" signature="BasePageNavigation(java.lang.String)[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@70fda8]" name="BasePageNavigation" is-config="true" duration-ms="8508" started-at="2019-11-05T22:01:08Z" finished-at="2019-11-05T22:01:16Z">
+        <test-method status="PASS" signature="BasePageNavigation(java.lang.String)[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@70fda8]" name="BasePageNavigation" is-config="true" duration-ms="8955" started-at="2019-11-05T22:57:44Z" finished-at="2019-11-05T22:57:53Z">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method status="PASS" signature="Login_WrongAuthenticationDetails_ShouldFailLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@70fda8]" name="Login_WrongAuthenticationDetails_ShouldFailLogin" duration-ms="6999" started-at="2019-11-05T22:01:16Z" finished-at="2019-11-05T22:01:23Z">
+        <test-method status="PASS" signature="Login_WrongAuthenticationDetails_ShouldFailLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@70fda8]" name="Login_WrongAuthenticationDetails_ShouldFailLogin" duration-ms="6740" started-at="2019-11-05T22:57:53Z" finished-at="2019-11-05T22:58:00Z">
           <params>
             <param index="0">
               <value>
@@ -79,11 +79,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_WrongAuthenticationDetails_ShouldFailLogin -->
-        <test-method status="PASS" signature="Closewindows()[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@70fda8]" name="Closewindows" is-config="true" duration-ms="1451" started-at="2019-11-05T22:01:23Z" finished-at="2019-11-05T22:01:25Z">
+        <test-method status="PASS" signature="Closewindows()[pri:0, instance:CharlyEducation.CharlyEducationAssignment.CharlyEducationTest@70fda8]" name="Closewindows" is-config="true" duration-ms="708" started-at="2019-11-05T22:58:00Z" finished-at="2019-11-05T22:58:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closewindows -->
       </class> <!-- CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
-    </test> <!-- NegativeTestCase -->
+    </test> <!-- LoginNegativeTestCase -->
   </suite> <!-- Suite -->
 </testng-results>
