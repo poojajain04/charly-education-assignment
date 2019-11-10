@@ -12,16 +12,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+import utilities.PropertyReader;
+
 public class DriverBase {
 	public WebDriver driver;
 
 	public WebDriver InitializeDriver() throws IOException {
 
 		PropertyReader propertyReaderObj = new PropertyReader();
-		String propertyValue = propertyReaderObj.GetPropertyValue(
-				"/Users/bhuvin/PoojaWorkspace/charly-education-assignment/CharlyEducationAssignment/src/main/java/resources/data.properties",
-				"browser");
-		
+		String propertyValue = propertyReaderObj.GetPropertyValue("./src/main/java/driver/data.properties", "browser");
+
 		System.out.println(propertyValue);// browser
 
 		if (propertyValue.equals("chrome")) {

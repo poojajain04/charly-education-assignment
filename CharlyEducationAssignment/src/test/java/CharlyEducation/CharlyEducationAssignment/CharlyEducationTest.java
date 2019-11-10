@@ -18,7 +18,7 @@ import driver.DriverBase;
 import pageObjects.LandingPage;
 import pageObjects.DashboardPage;
 import pageObjects.LoginPage;
-import resources.TabHelper;
+import utilities.TabHelper;
 
 public class CharlyEducationTest extends DriverBase {
 
