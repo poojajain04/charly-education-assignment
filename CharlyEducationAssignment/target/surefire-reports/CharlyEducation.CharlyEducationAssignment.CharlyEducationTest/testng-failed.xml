@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CharlyEducation.CharlyEducationAssignment.CharlyEducationTest]" verbose="0">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
+        <methods>
+          <include name="Login_WrongAuthenticationDetails_ShouldFailLogin"/>
+          <include name="Login_RightAuthenticationDetails_ShouldLoginSuccessfully"/>
+        </methods>
+      </class> <!-- CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [CharlyEducation.CharlyEducationAssignment.CharlyEducationTest] -->

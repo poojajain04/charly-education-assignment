@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]" verbose="10">
+  <parameter name="password" value="Pluspeter123"/>
+  <parameter name="errorMessage" value="Entweder sind deine E-Mail oder Passwort inkorrekt. Oder du hast dein Konto noch nicht aktiviert. Um es zu aktivieren, klicke auf den Link in unserer Registrierungs-E-Mail"/>
+  <parameter name="successMsg" value="Hey Carina"/>
+  <parameter name="userName" value="6317@berlin-htw.de"/>
+  <parameter name="url" value="https://www.charly.education"/>
+  <test name="LoginNegativeTestCase(failed)">
+    <parameter name="password" value="Pluspeter123"/>
+    <parameter name="errorMessage" value="Entweder sind deine E-Mail oder Passwort inkorrekt. Oder du hast dein Konto noch nicht aktiviert. Um es zu aktivieren, klicke auf den Link in unserer Registrierungs-E-Mail"/>
     <classes>
       <class name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
         <methods>
-          <include name="Login_WrongAuthenticationDetails_ShouldFailLogin"/>
-          <include name="Login_RightAuthenticationDetails_ShouldLoginSuccessfully"/>
+          <include name="Login_WrongAuthenticationDetails_ShouldFailLogin" invocation-numbers="0"/>
+          <include name="Closewindows"/>
+          <include name="Closewindows"/>
+          <include name="BasePageNavigation"/>
+          <include name="BasePageNavigation"/>
         </methods>
       </class> <!-- CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- LoginNegativeTestCase(failed) -->
+</suite> <!-- Failed suite [Suite] -->

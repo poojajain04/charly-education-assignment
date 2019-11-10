@@ -5,13 +5,17 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.jsoup.Connection.Base;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import driver.DriverBase;
-import pageObjects.CharlyEducationLandingPage;
+import pageObjects.LandingPage;
 import pageObjects.DashboardPage;
 import pageObjects.LoginPage;
 import resources.TabHelper;
@@ -25,9 +29,10 @@ public class CharlyEducationTest extends DriverBase {
 		driver.get(url);
 		driver.manage().window().maximize();
 
-		CharlyEducationLandingPage landingPageObj = new CharlyEducationLandingPage(driver);
-		landingPageObj.LandingPagelogin().click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		LandingPage landingPageObj = new LandingPage(driver);
+		WebElement loginButton = landingPageObj.LandingPagelogin();
+		this.waitForLoad(driver);
+		loginButton.click();
 		TabHelper tabHelperObj = new TabHelper();
 		tabHelperObj.SwitchToNewTab(driver);
 	}
@@ -45,6 +50,7 @@ public class CharlyEducationTest extends DriverBase {
 
 		DashboardPage signInPageObj = new DashboardPage(driver);
 		assertEquals(signInPageObj.GetUserName(), successMsg);
+		
 	}
 
 	@Parameters({ "userName", "password", "errorMessage" })
@@ -59,6 +65,7 @@ public class CharlyEducationTest extends DriverBase {
 
 		assertEquals(loginPageObj.GetErrorMessageForLoginFailure(), errorMsg);
 	}
+	
 
 	@AfterMethod
 	public void Closewindows() {

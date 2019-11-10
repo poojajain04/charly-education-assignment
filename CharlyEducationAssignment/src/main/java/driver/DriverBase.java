@@ -3,9 +3,14 @@ package driver;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverBase {
 	public WebDriver driver;
@@ -14,16 +19,16 @@ public class DriverBase {
 
 		PropertyReader propertyReaderObj = new PropertyReader();
 		String propertyValue = propertyReaderObj.GetPropertyValue(
-				"C:\\Users\\lenovo\\eclipse-workspace\\CharlyEducationAssignment\\src\\main\\java\\resources\\data.properties",
+				"/Users/bhuvin/PoojaWorkspace/charly-education-assignment/CharlyEducationAssignment/src/main/java/resources/data.properties",
 				"browser");
-
+		
 		System.out.println(propertyValue);// browser
 
 		if (propertyValue.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver.exe");
+	        WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else {
-			System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 
@@ -31,5 +36,22 @@ public class DriverBase {
 		return driver;
 
 	}
+	
+	 public void waitForLoad(WebDriver driver) {
+	        ExpectedCondition<Boolean> pageLoadCondition = new
+	                ExpectedCondition<Boolean>() {
+	                    public Boolean apply(WebDriver driver) {
+	                        return ((JavascriptExecutor)driver).executeScript("return document.readyState").equals("complete");
+	                    }
+	                };
+	        WebDriverWait wait = new WebDriverWait(driver, 30);
+	        wait.until(pageLoadCondition);
+	        try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
 
 }

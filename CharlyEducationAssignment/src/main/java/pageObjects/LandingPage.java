@@ -4,17 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class CharlyEducationLandingPage {
+public class LandingPage {
 	WebDriver driver;
 
-	By landingPage = By.xpath("//*[@id='menu']/div[4]/div[2]/a");
-
-	public CharlyEducationLandingPage(WebDriver driver) {
+	By loginLink = By.xpath("/html/body/div[2]/div/div[4]/div[3]/a[1]");
+	public LandingPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
 	public WebElement LandingPagelogin() {
-		return driver.findElement(landingPage);
+		return driver.findElement(loginLink);
 	}
 
 }

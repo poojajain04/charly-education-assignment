@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" verbose="10">
 	<parameter name="url" value="https://www.charly.education" />
 	<parameter name="userName" value="6317@berlin-htw.de" />
 	<parameter name="password" value="Pluspeter" />
@@ -25,7 +25,7 @@
 				<methods>
 					<include name="Login_WrongAuthenticationDetails_ShouldFailLogin" />
 				</methods>
-			</class>
+			</class> 
 		</classes>
 	</test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Suite --> 
