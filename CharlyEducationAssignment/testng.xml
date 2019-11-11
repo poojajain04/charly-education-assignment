@@ -4,13 +4,16 @@
 	<parameter name="url" value="https://www.charly.education" />
 	<parameter name="userName" value="6317@berlin-htw.de" />
 	<parameter name="password" value="Pluspeter" />
+	<parameter name="browser" value="chrome" />
+	
 	<test thread-count="5" name="LoginPostiveTestCase">
 		<parameter name="successMsg" value="Hey Carina" />
 		<classes>
 			<class
 				name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
 				<methods>
-					<include name="Login_RightAuthenticationDetails_ShouldLoginSuccessfully" />
+					<include
+						name="Login_RightAuthenticationDetails_ShouldLoginSuccessfully" />
 				</methods>
 			</class>
 		</classes>
@@ -23,9 +26,47 @@
 			<class
 				name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
 				<methods>
-					<include name="Login_WrongAuthenticationDetails_ShouldFailLogin" />
+					<include
+						name="Login_WrongAuthenticationDetails_ShouldFailLogin" />
 				</methods>
-			</class> 
+			</class>
 		</classes>
 	</test> <!-- Test -->
+	<test thread-count="5" name="LoginNegativeSqlInjectionTestCase">
+		<parameter name="password" value="1' or '1' = '1" />
+		<parameter name="errorMessage"
+			value="Entweder sind deine E-Mail oder Passwort inkorrekt. Oder du hast dein Konto noch nicht aktiviert. Um es zu aktivieren, klicke auf den Link in unserer Registrierungs-E-Mail" />
+		<classes>
+			<class
+				name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
+				<methods>
+					<include
+						name="Login_SqlInjection_ShouldFailLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+		<test thread-count="5" name="LoginPagePasswordFieldIsInputTypePassword">
+		<classes>
+			<class
+				name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
+				<methods>
+					<include
+						name="Login_PasswordField_ShouldBeTypePassword" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="RegistrationLinkDisplayed">
+	<parameter name="HeadingMsg" value="Registrierung" />
+		<classes>
+			<class
+				name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
+				<methods>
+					<include name="Register_RegistrationLink_IsClickable" />
+				</methods>
+			</class>
+		</classes>
+
+	</test>
 </suite> <!-- Suite --> 

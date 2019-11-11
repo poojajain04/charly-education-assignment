@@ -8,28 +8,27 @@ public class LoginPage {
 
 	WebDriver driver;
 	By username = By.id("email");
-	By Password = By.id("password");
-	By Login = By.xpath("/html/body/div[1]/div[3]/div/div/section/div[2]/div/button");
+	By password = By.id("password");
+	By loginButton = By.xpath("/html/body/div[1]/div[3]/div/div/section/div[2]/div/button");
 	By loginFailureErrorMsg = By.xpath("/html/body/div/div[3]/div/div/p");
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	public WebElement EnterUsername() {
+	public WebElement getUserNameElement() {
 		return driver.findElement(username);
 	}
 
-	public WebElement EnterPassword() {
-		return driver.findElement(Password);
+	public WebElement getPasswordElement() {
+		return driver.findElement(password);
 	}
 
-	public WebElement ClickLogin() {
-		return driver.findElement(Login);
+	public WebElement getLoginButtonElement() {
+		return driver.findElement(loginButton);
 	}
 
-	public String GetErrorMessageForLoginFailure() {
+	public String getErrorMessageForLoginFailure() {
 		return driver.findElement(loginFailureErrorMsg).getText();
 	}
-
 }

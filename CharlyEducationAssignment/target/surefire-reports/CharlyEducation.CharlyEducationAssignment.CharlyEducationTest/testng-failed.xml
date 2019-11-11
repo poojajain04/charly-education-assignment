@@ -5,8 +5,11 @@
     <classes>
       <class name="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
         <methods>
+          <include name="Register_RegistrationLink_IsClickable"/>
           <include name="Login_WrongAuthenticationDetails_ShouldFailLogin"/>
           <include name="Login_RightAuthenticationDetails_ShouldLoginSuccessfully"/>
+          <include name="Login_SqlInjection_ShouldFailLogin"/>
+          <include name="Login_PasswordField_ShouldBeTypePassword"/>
         </methods>
       </class> <!-- CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
     </classes>

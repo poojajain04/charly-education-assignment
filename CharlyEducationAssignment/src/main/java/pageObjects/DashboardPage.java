@@ -11,8 +11,7 @@ public class DashboardPage {
 		this.driver = driver;
 	}
 
-	public String GetUserName() {
+	public String getUserNameText() {
 		return driver.findElement(getUser).getText();
 	}
-
 }

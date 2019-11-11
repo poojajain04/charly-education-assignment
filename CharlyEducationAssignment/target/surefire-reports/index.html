@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">5 methods, 4 failed,  1 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,10 +107,34 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" title="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" class="method navigator-link" hash-for-method="Login_SqlInjection_ShouldFailLogin">Login_SqlInjection_ShouldFailLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" title="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" class="method navigator-link" hash-for-method="Login_WrongAuthenticationDetails_ShouldFailLogin">Login_WrongAuthenticationDetails_ShouldFailLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" title="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" class="method navigator-link" hash-for-method="Register_RegistrationLink_IsClickable">Register_RegistrationLink_IsClickable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" class="hide-methods skipped suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest"> (hide)</a> <!-- hide-methods skipped suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
+                      <a href="#" panel-name="suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" class="show-methods skipped suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest"> (show)</a> <!-- show-methods skipped suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
+                    </span>
+                    <div class="method-list-content skipped suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" title="CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" class="method navigator-link" hash-for-method="Login_PasswordField_ShouldBeTypePassword">Login_PasswordField_ShouldBeTypePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -142,6 +166,18 @@ Parameter &apos;userName&apos; is required by @Test on method Login_RightAuthent
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="Login_SqlInjection_ShouldFailLogin">
+                  </a> <!-- Login_SqlInjection_ShouldFailLogin -->
+                  <span class="method-name">Login_SqlInjection_ShouldFailLogin</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;userName&apos; is required by @Test on method Login_SqlInjection_ShouldFailLogin but has not been marked @Optional or defined
+
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Login_WrongAuthenticationDetails_ShouldFailLogin">
                   </a> <!-- Login_WrongAuthenticationDetails_ShouldFailLogin -->
                   <span class="method-name">Login_WrongAuthenticationDetails_ShouldFailLogin</span>
@@ -152,8 +188,40 @@ Parameter &apos;userName&apos; is required by @Test on method Login_WrongAuthent
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Register_RegistrationLink_IsClickable">
+                  </a> <!-- Register_RegistrationLink_IsClickable -->
+                  <span class="method-name">Register_RegistrationLink_IsClickable</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;HeadingMsg&apos; is required by @Test on method Register_RegistrationLink_IsClickable but has not been marked @Optional or defined
+
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest-class-failed -->
+          <div class="suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">CharlyEducation.CharlyEducationAssignment.CharlyEducationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_PasswordField_ShouldBeTypePassword">
+                  </a> <!-- Login_PasswordField_ShouldBeTypePassword -->
+                  <span class="method-name">Login_PasswordField_ShouldBeTypePassword</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;url&apos; is required by BeforeMethod on method BasePageNavigation but has not been marked @Optional or defined
+
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest-class-skipped -->
         </div> <!-- panel CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
         <div panel-name="test-xml-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -205,20 +273,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login_WrongAuthenticationDetails_ShouldFailLogin')
+data.setCell(0, 1, 'Login_PasswordField_ShouldBeTypePassword')
 data.setCell(0, 2, 'CharlyEducation.CharlyEducationAssignment.CharlyEducationTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 4);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login_RightAuthenticationDetails_ShouldLoginSuccessfully')
+data.setCell(1, 1, 'Login_SqlInjection_ShouldFailLogin')
 data.setCell(1, 2, 'CharlyEducation.CharlyEducationAssignment.CharlyEducationTest')
 data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Register_RegistrationLink_IsClickable')
+data.setCell(2, 2, 'CharlyEducation.CharlyEducationAssignment.CharlyEducationTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Login_WrongAuthenticationDetails_ShouldFailLogin')
+data.setCell(3, 2, 'CharlyEducation.CharlyEducationAssignment.CharlyEducationTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Login_RightAuthenticationDetails_ShouldLoginSuccessfully')
+data.setCell(4, 2, 'CharlyEducation.CharlyEducationAssignment.CharlyEducationTest')
+data.setCell(4, 3, 0);
 window.suiteTableData['CharlyEducation.CharlyEducationAssignment.CharlyEducationTest']= { tableData: data, tableDiv: 'times-div-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 4 ms</span>
               <div id="times-div-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest">
               </div> <!-- times-div-CharlyEducation.CharlyEducationAssignment.CharlyEducationTest -->
             </div> <!-- times-div -->
@@ -243,6 +323,12 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">CharlyEducation.CharlyEducationAssignment.CharlyEducationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Login_PasswordField_ShouldBeTypePassword</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

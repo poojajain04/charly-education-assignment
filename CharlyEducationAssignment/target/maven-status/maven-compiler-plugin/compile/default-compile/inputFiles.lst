@@ -1,6 +1,6 @@
-/Users/bhuvin/PoojaWorkspace/charly-education-assignment/CharlyEducationAssignment/src/main/java/pageObjects/CharlyEducationLandingPage.java
-/Users/bhuvin/PoojaWorkspace/charly-education-assignment/CharlyEducationAssignment/src/main/java/driver/PropertyReader.java
-/Users/bhuvin/PoojaWorkspace/charly-education-assignment/CharlyEducationAssignment/src/main/java/pageObjects/DashboardPage.java
-/Users/bhuvin/PoojaWorkspace/charly-education-assignment/CharlyEducationAssignment/src/main/java/driver/DriverBase.java
-/Users/bhuvin/PoojaWorkspace/charly-education-assignment/CharlyEducationAssignment/src/main/java/pageObjects/LoginPage.java
-/Users/bhuvin/PoojaWorkspace/charly-education-assignment/CharlyEducationAssignment/src/main/java/resources/TabHelper.java
+/Users/bhuvin/PoojaWorkspace/final/charly-education-assignment/CharlyEducationAssignment/src/main/java/pageObjects/LoginPage.java
+/Users/bhuvin/PoojaWorkspace/final/charly-education-assignment/CharlyEducationAssignment/src/main/java/driver/DriverBase.java
+/Users/bhuvin/PoojaWorkspace/final/charly-education-assignment/CharlyEducationAssignment/src/main/java/pageObjects/LandingPage.java
+/Users/bhuvin/PoojaWorkspace/final/charly-education-assignment/CharlyEducationAssignment/src/main/java/utilities/TabHelper.java
+/Users/bhuvin/PoojaWorkspace/final/charly-education-assignment/CharlyEducationAssignment/src/main/java/pageObjects/CustomerRegistration.java
+/Users/bhuvin/PoojaWorkspace/final/charly-education-assignment/CharlyEducationAssignment/src/main/java/pageObjects/DashboardPage.java

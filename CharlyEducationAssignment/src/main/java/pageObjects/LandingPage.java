@@ -12,8 +12,7 @@ public class LandingPage {
 		this.driver = driver;
 	}
 
-	public WebElement LandingPagelogin() {
+	public WebElement getLandingPageLoginElement() {
 		return driver.findElement(loginLink);
 	}
-
 }
