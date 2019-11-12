@@ -2,13 +2,10 @@
 I have used following components for doing the Automation testing:
 - Selenium Web driver
 - TestNG
+- [WebDriverManager](https://github.com/bonigarcia/webdrivermanager): I have used this since installing the specific drivers and giving the path to different drivers are very annoying. Especially in a scenario like this, it gets very difficult for the person to build and check the code. 
 
-For running this project you need to:
-- Install Chrome driver and Gecko driver from [Selenium official website](https://www.seleniumhq.org/download/)
-- Install TestNG in the IDE. For Eclipse IDE you can follow this [website](https://www.guru99.com/install-testng-in-eclipse.html)
+### Pre-requisites
+You will need to install the latest Chrome version i.e. Chrome 78 since the code depends on that. 
 
-After installation; Please replace the path to Chrome and Gecko drivers in DriverBase.java 
-```
-/CharlyEducationAssignment/src/main/java/driver/DriverBase.java
-```
-Here in the code, due to time constraints, I have taken some shortcuts which I would not if it is a real project. 
+### Structure of the code
+I have tried to segregate the code as per my understanding. I have divided the main helper classes in Driver, PageObject, and Utilities.
